@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/greyed"
+    tools:context="com.example.vish.suv_admin.Seminar"
+    tools:layout_editor_absoluteX="0dp"
+    tools:layout_editor_absoluteY="25dp">
+
+    <EditText
+        android:id="@+id/editText3"
+        style="@style/edittext_style"
+        android:hint="BRIEF"
+        android:inputType="text"
+        android:textAlignment="center"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="24dp"
+        app:layout_constraintTop_toBottomOf="@+id/editText12" />
+
+    <EditText
+        android:id="@+id/editText4"
+        style="@style/edittext_style"
+        android:focusable="false"
+        android:hint="TIME"
+        android:inputType="time"
+        android:textAlignment="center"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="24dp"
+        app:layout_constraintTop_toBottomOf="@+id/editText3" />
+
+    <EditText
+        android:id="@+id/editText5"
+        style="@style/edittext_style"
+        android:focusable="false"
+        android:hint="DATE"
+        android:inputType="date"
+        android:textAlignment="center"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="24dp"
+        app:layout_constraintTop_toBottomOf="@+id/editText4" />
+
+    <TextView
+        android:id="@+id/textView12"
+        style="@style/textview_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="PLACE"
+        android:textAllCaps="true"
+        android:textStyle="bold"
+        android:layout_marginLeft="16dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="32dp"
+        app:layout_constraintTop_toBottomOf="@+id/editText5" />
+
+    <Spinner
+        android:id="@+id/spinner3"
+        style="@style/edittext_spinner"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="80dp"
+        android:layout_marginTop="24dp"
+        android:textAlignment="center"
+        app:layout_constraintLeft_toRightOf="@+id/textView12"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText5" />
+
+    <Button
+        android:id="@+id/button16"
+        style="@style/button_style"
+        android:text="open"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="24dp"
+        app:layout_constraintTop_toBottomOf="@+id/textView16" />
+
+    <Button
+        android:id="@+id/button18"
+        style="@style/button_logout"
+        android:layout_marginRight="0dp"
+        android:layout_marginTop="0dp"
+        android:text="LOGOUT"
+        android:textSize="10sp"
+        android:textStyle="bold"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView13"
+        style="@style/textview_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="-11dp"
+        android:textAllCaps="true"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBaseline_toBaselineOf="@+id/button18"
+        app:layout_constraintRight_toLeftOf="@+id/button18" />
+
+    <TextView
+        android:id="@+id/textView16"
+        style="@style/textview_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:textAllCaps="true"
+        android:textColor="@android:color/holo_red_dark"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/spinner3"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <EditText
+        android:id="@+id/editText8"
+        style="@style/edittext_style"
+        android:hint="ENTER TITLE"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="32dp"
+        app:layout_constraintTop_toBottomOf="@+id/button18" />
+
+    <EditText
+        android:id="@+id/editText12"
+        style="@style/edittext_style"
+        android:hint="BY"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="24dp"
+        app:layout_constraintTop_toBottomOf="@+id/editText8" />
+</android.support.constraint.ConstraintLayout>
